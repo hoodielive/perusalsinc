@@ -1,0 +1,13 @@
+Computer Basics 
+- CPU (Central Processing Unit) 
+    - Arithmetic Logic Unit (ALU) 
+        - Performs arithmetic & logical operations 
+    - Control Unit (CU) 
+        - Extracts instructions from memory to decode and execute them 
+    - Registers 
+        - Small amount of memory available to CPU that is part of it
+        - Much faster than main memory 
+    - Cache 
+        - Modern CPUs use cache memory to reduce average time to access data from main memory 
+        - Different types of cache L1, L2, L3, L4
+
