@@ -1,0 +1,52 @@
+#+TITLE: Terms
+
+* Segmentation of Memory
+** Programs in Memory
+*** .text section
+    This section deals with the .text portion of a binary executable file. 
+    Contains the machine instructions to get the tast done.
+*** .data section
+    This section stores global 'initialized' variables such as:
+    int a = 0; 
+    Its size is 'fixed' at runtime
+** Heap Section
+*** What it does? 
+    + This section is used to store dynamically allocated variables and grows from the lower-addressed memory to the higher based
+      memory.
+    + The allocation of such memory is controlled by malloc() and free()
+    + For example; if you wanted to declare an integer and have the memory allocated at runtime you would:
+      int i = malloc (sizeof (int)); 
+    + This command 'dynamically' allocates an integer.
+    + It contains the preexisting value of that memory
+** Stack Section
+*** What is it used for?
+    It is used to keep track of function calls (recursively) and grows higher-addressed memory to lower-addressed memory.
+**** Key point: 
+     This is how buffer overflows are conceived.
+     + Because of how the stack 'grows'. 
+     + Local variables exist here. 
+** Environment/Arguments Section
+*** Does
+    It is used to store a copy of system-level variables that may be required by the process during runtime.
+**** For example:
+     1. Path
+     2. Shell Name 
+     3. Hostname 
+    + this section is writeable - allowing its use in format string and buffer flow exploits. 
+    + commandline args are stored in this area. 
+
+** The Memory Space of a Process is as follows from lower-addressed memory space to higher 
+   | Lower addresses | Higher addresses | 
+   | .text | .data   | .bss | Heap | Unused | Stack | .Env |
+  
+** This is:
+   char * str; 
+   Give me 4 bytes called str which is to be used as a pointer to a character variable
+
+   int * point1; 
+   Give me 4 bytes called point1, which is a pointer to an integer variable
+
+   If you want to print the preceding value, do so with:
+   printf("%d", *point1); 
+   * means dereference the pointer called point1 and display its value with printf
+
