@@ -11,7 +11,7 @@ int main(int argc, char * argv[])
     fgets(name, 50, stdin);
     name[strlen(name) - 1] = '\0';
 
-    strcat(greeting, ' ');
+    strcat(greeting, " ");
     strcat(greeting, name);
 
     printf("%s", greeting);
