@@ -8,8 +8,7 @@ int main(int argc, char *argv[])
 
     scanf("%d", &a);
     b = a * 2;
-    printf("You typed the number: %d\n", a);
-    printf("The result of the operation is: %d", b);
+    printf("You typed %d.\nThe result of %d x 2 = %d", a, a, b);
 
     return 0;
 }
