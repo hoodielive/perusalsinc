@@ -3,12 +3,11 @@
 
 int main(int argc, char *argv[])
 {
-    int a;
-    a = 0;
-    while (a < 5)
+    int i = 0;
+    while(i < 10)
     {
-        printf("Here's some useful text\n", a);
-        a++;
+        printf("Here\n");
+        i++;
     }
 
     return 0;
