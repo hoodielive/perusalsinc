@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 int main(int argc, char * argv[])
 {
-    char text[] = "Hello!!!";
+    char text[] = "Hello!!!!!";
     int i;
 
-    for (i = 0; i < 8; i++) {
+    for (i = 0; i < strlen(text); i++) {
         if (text[i] == '!') {
             text[i] = '?';
         }
