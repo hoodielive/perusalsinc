@@ -3,15 +3,15 @@
 
 int main(int argc, char *argv[])
 {
-    int a[5];
+    float a[5];
 
-    a[0] = 10;
-    a[1] = 12;
-    a[2] = 15;
-    a[3] = 20;
-    a[4] = 4;
+    a[0] = 10.4;
+    a[1] = 12.2;
+    a[2] = 15.3;
+    a[3] = 20.9;
+    a[4] = 4.8;
 
-    int sum = 0;
+    float sum = 0;
     int i;
 
     for (i = 0; i < 5; i++)
@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
         sum += a[i];
     }
 
-    printf("The sum of the array is: %d", sum);
+    printf("The sum of the array is: %f", sum);
 
     return 0;
 }
