@@ -23,7 +23,7 @@ The Linux kernel executable typically resides at:
 
 unix->vmunix->vmlinux-vmlinuz
 
-UNIX::the kernel was once called unix. 
-vmunix::but when virtual memory was added it was called vmlinux. 
-vmlinux::on linux the filename mirrors the system name.
-vmlinuz::the z replaces the final x to signify that the kernel is a compressed executable. 
+UNIX, the kernel was once called unix. 
+vmunix, but when virtual memory was added it was called vmlinux. 
+vmlinux, on linux the filename mirrors the system name.
+vmlinuz, the z replaces the final x to signify that the kernel is a compressed executable. 
