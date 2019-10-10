@@ -21,7 +21,7 @@ Operating Systems has 2 different meanings:
 The Linux kernel executable typically resides at:
 /boot/vmlinuz or a similiar convention::[man hier]
 
-unix->vmunix->vmlinux-vmlinuz
+unix-> vmunix -> vmlinux-> vmlinuz
 
 UNIX, the kernel was once called unix. 
 
